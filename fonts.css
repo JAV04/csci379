@@ -1,16 +1,22 @@
 .neuton{
 	font-family: 'Neuton', serif;
+	font-style: 'italic'
+	font-weight: 600;
 }
 
 .arvo{
 	font-family: 'Arvo', serif;
+	text-shadow: 2px 2px #ff0000;
+	font-weight: 800;
 }
 
 .titillium{
 	font-family: 'Titillium Web', sans-serif;
+	font-weight: 200;
 }
 
 .raleway{
 	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
 }
 
