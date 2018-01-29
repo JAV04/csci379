@@ -1,12 +1,13 @@
 .neuton{
 	font-family: 'Neuton', serif;
-	font-style: 'Italic'
+	font-style: italic;
 	font-weight: 600;
 }
 
 .arvo{
 	font-family: 'Arvo', serif;
 	text-shadow: 1px 1px #add8e6;
+	font-weight: 500;
 }
 
 .titillium{
