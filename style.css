@@ -1,6 +1,5 @@
-
 section#main{
-	background: #b7b7b7;
+	background-color: #b7b7b7;
 }
 
 section#main > header > h1 {
@@ -12,5 +11,5 @@ section#main > header > h2 {
 }
 
 section#csci379 {
-	color: #b7b7b7;
+	color: #5d5c5d;
 }
