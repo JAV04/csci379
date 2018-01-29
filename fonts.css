@@ -1,18 +1,17 @@
 .neuton{
 	font-family: 'Neuton', serif;
-	font-style: 'italic'
+	font-style: 'Italic'
 	font-weight: 600;
 }
 
 .arvo{
 	font-family: 'Arvo', serif;
-	text-shadow: 2px 2px #ff0000;
-	font-weight: 800;
+	text-shadow: 1px 1px #ff0000;
 }
 
 .titillium{
 	font-family: 'Titillium Web', sans-serif;
-	font-weight: 200;
+	font-weight: 800;
 }
 
 .raleway{
