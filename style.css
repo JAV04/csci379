@@ -1,11 +1,72 @@
-section#main > header > h1 {
-	color: #239ab9;
+#main{
+	position: fixed;
+	border: none;
+	width: 100%;
+	height: 100%;
+	background: #ff9966;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ff5e62, #ff9966); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-section#main > header > h2 {
-	color: #52bad5;
+
+header{
+	border-color: white;
+	border-width: 5px;
 }
 
-section#csci379 {
-	color: #5d5c5d;
+#headerText{
+	color: white;
+	font-family: 'Arvo', serif;
+	text-shadow: 1px 1px #add8e6;
+	margin-top: 3%;
+	font-weight: 500;
+	font-size: 50px;
+	margin-bottom: 12px;
 }
+
+.btns{
+
+}
+
+.controlBtn{
+    cursor:pointer;
+    border: none;
+    position: center;
+    width: 100px;
+    height: 100px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+
+.controlBtn#personal{
+    background:url(images/boy.svg) no-repeat;
+}
+
+.controlBtn#school{
+    background:url(images/blackboard.svg) no-repeat;
+}
+
+.controlBtn#prof{
+    background:url(images/editor.svg) no-repeat;
+}
+
+.controlBtn#hobbies{
+	background:url(images/rubik.svg) no-repeat;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: 31%;
+    margin: 1%;
+}
+
+
+
+
+
+
