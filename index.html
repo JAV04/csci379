@@ -1,31 +1,131 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<html>
-	<head>
-	  <meta charset="utf-8">
-	  <title>Jordan's Site</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-	<script src="script.js"></script>
-	  <link href="https://fonts.googleapis.com/css?family=Arvo|Neuton:700|Raleway|Titillium+Web|Sedgwick+Ave+Display" rel="stylesheet">
-	  <link rel="stylesheet" href="style.css">
-	</head>
-
-	<body>
-			<section id="main">
-				<header>
-					<center>
-							<h1 id="headerText"> Hi, I'm Jordan </h1>
-							<div class="btns">
-								<button id="personal" class="controlBtn" onclick="handleBtnClick('Hi, I\'m Jordan')" autofocus></button>
-								<button id="school" class="controlBtn" onclick="handleBtnClick('My Education')"></button>
-								<button id="prof" class="controlBtn"></button>
-								<button id="hobbies" class="controlBtn"></button>
-							</div>
-					</center>
-				</header>
+  </head>
+  <body>
+      <section id="main">
+        <header>
+          <div class="collapse bg-dark" id="navbarHeader">
+          </div>
+          <div class="navbar navbar-dark bg-dark box-shadow">
+            <div class="container d-flex justify-content-between">
+              <a href="#" class="navbar-brand d-flex align-items-center">
+              </a>
+              <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </div>
+        </header>
 
 
-			</section>
-	</body>
+        <section id="intro" class="jumbotron text-center custom-border">
+            <div class="row ml-1">
+              <div class="col-8">
+                <article id="aboutMe">
+                  <div class="float-left">
+                    <h1 class="jumbotron-heading">Jordan Voves</h1>
+                    <h2 class="lead text-muted">Software Developer - jav017@bucknell.edu</h2>
+                    <p class="lead text-muted">About Me: Computer Science and Engineering Student at Bucknell University. I am a hardworking problem solver, and a quick learner. My areas of interests include working with big data, machine learning, and front-end development</p>
+                    <p>
+                      <a href="#" class="btn btn-primary my-2">Download Resume</a>
+                      <a href="#" class="btn btn-secondary my-2">Contact</a>
+                    </p>
+                  </div>
+                </article>
+              </div>
+              <div class="col-4 float-right" >
+                <img src="profile.JPG" class="img-circle">
+              </div>
+          </div>
+        </section>
+
+
+        <section id="work" class="m-4"> 
+          <div class="container-fluid">
+            <div class="row pl-3 pr-3 pt-4">
+                <div class="col-sm-12 col-md-12 col-lg-12">  
+                  <div class="card card-inverse m-1 mb-4 rounded border border-white">
+                    <div class="card-header">
+                      <h1 class="card-title text-center">Classwork</h1> 
+                    </div>
+                    <div class="card-block p-3">
+                        <div class="row">
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card p-3">
+                              <div class="card-block">
+                                <h4 class="card-title">Fun With Fonts</h4>
+                                <p class="card-text">A Collection of Google fonts</p>
+                                <a href="funfonts.html" class="btn btn-primary">View Work</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <div class="card p-3">
+                              <div class="card-block">
+                                <h4 class="card-title">Bootstrap Features</h4>
+                                <p class="card-text">Bootstrap Examples</p>
+                                <a href="../funfonts.html" class="btn btn-primary">View Work</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>  
+                </div>
+              </div>
+            </div>
+
+            <div class="row pl-3 pr-3 pb-4">
+                <div class="col-sm-12 col-md-6 col-lg-4"> 
+                       <div class="card m-1 rounded"> 
+                            <div class="card-block">
+                              <div class="card-header">
+                                <h1 class="card-title text-left">Project 1</h1> 
+                              </div>
+                              <div class="p-3">
+                                <p><a href="../project1/index.html"> Project 1-a </a></p>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus molestie nunc. Bibendum enim facilisis gravida neque convallis a cras semper. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris.
+                                </p>   
+                              </div>
+                            </div>                     
+                       </div> 
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4"> 
+                       <div class="card m-1 rounded"> 
+                            <div class="card-block">
+                              <div class="card-header">
+                                <h1 class="card-title text-lg-center text-md-right text-sm-left">Project 2</h1> 
+                              </div>
+                              <div class="p-3">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus molestie nunc. Bibendum enim facilisis gravida neque convallis a cras semper. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum.
+                                </p>   
+                              </div> 
+                            </div>                     
+                       </div>                 
+                  </div>
+                <div class="col-sm-12 col-md-12 col-lg-4"> 
+                       <div class="card m-1 rounded"> 
+                            <div class="card-block">
+                              <div class="card-header">
+                                <h1 class="card-title text-lg-right text-md-center text-sm-left">Project 3</h1> 
+                              </div>
+                              <div class="p-3">
+                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu lobortis elementum nibh tellus molestie nunc. Bibendum enim facilisis gravida neque convallis a cras semper. Pretium aenean pharetra magna ac placerat vestibulum lectus mauris. Eget lorem dolor sed viverra ipsum.
+                                </p>   
+                              </div>  
+                            </div>                     
+                       </div> 
+                </div>
+              </div>
+            </div>
+          </article>
+      </section>
+  </body>
 </html>
-
