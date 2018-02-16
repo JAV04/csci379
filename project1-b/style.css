@@ -1,0 +1,24 @@
+#main{
+	border: none;
+ 	width: 100%;
+  	height: 100%;
+ 	left: 0;
+	top: 0;
+  	background: #222629; 
+}
+
+.proj{
+	border: thick double #56b4d3 !important;
+}
+
+.img-circle{
+	border-radius: 40%;
+}
+
+.custom-border{
+	border:6px solid #222629;
+}
+
+.header-bg{
+	background-color: #474B4F;
+}
