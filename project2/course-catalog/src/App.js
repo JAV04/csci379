@@ -58,6 +58,7 @@ class App extends Component {
   updateDept(dept){
     this.setState({dept: dept}, function () {
         this.updateData();
+        console.log(dept)
     });    
   }
 
