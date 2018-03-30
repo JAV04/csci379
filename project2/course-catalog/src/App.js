@@ -35,7 +35,7 @@ class App extends Component {
       dept: "",
       ccc: "",
       year: "2018",
-      semester: "Spring", 
+      semester: "Fall", 
       courses: [],
       unAllowedDays: [],
 
@@ -94,7 +94,7 @@ class App extends Component {
   updateData(){ 
     this.setState({ loading: true})
 
-    let y = "2019";
+    let y = this.state.year;
     let sem = this.state.semester;
     let req = this.state.ccc;
     let department = this.state.dept;
@@ -102,7 +102,7 @@ class App extends Component {
 
 
 
-    let textQuery = (params.length > 0) ? '&text=' + this.state.params.join(' ') : "";
+    let textQuery = (params.length > 0) ? '&text=' + this.state.params.join(' '): "";
     let cccQuery = (req.length > 0) ? "&CCCReq=" + req : "";
     let deptQuery = (department.length > 0) ? "&Department=" + department : "";
     let q = "https://www.eg.bucknell.edu/~amm042/service/q?limit=75&Semester=" + sem + '&Year=' + y + deptQuery + cccQuery + textQuery;
@@ -119,11 +119,8 @@ class App extends Component {
       passed = true
       for (j in letters){
         entry =  data[i]['Meeting Time']
-        console.log(letters)
-        console.log(entry)
-        if ( (entry === undefined) || entry.indexOf(letters[j]) > -1){
+        if ( (entry === undefined) || entry.indexOf(letters[j]) > -1 || entry === 'TBA'){
           passed = false;
-          console.log("failed")
           break
         }
       }
@@ -164,12 +161,24 @@ class App extends Component {
         <div className="App">
 
 
-                    <InputForm 
+                    <Card>
+                      <p
+                        style={{
+                          fontSize: 14,
+                          color: 'rgba(0, 0, 0, 0.85)',
+                          marginBottom: 16,
+                          fontWeight: 500,
+                        }}
+                      >
+                      </p>
+
+                      <InputForm 
                         semesterHandler={this.updateSemester} semester={this.state.semester}
                         yearHandler={this.updateYear} year={this.state.year}
                         deptHandler={this.updateDept} dept={this.state.dept}
                         cccHandler={this.updateCCC} ccc={this.state.ccc}
                         daysHandler={this.updateUnallowedDays}/>
+                      <ParamTags params={this.state.params} paramHandler={this.updateParams}/>
 
                     <Card loading={this.state.loading}>
                       <p
@@ -183,8 +192,9 @@ class App extends Component {
                       </p>
 
 
-                      <ParamTags params={this.state.params} paramHandler={this.updateParams}/>
                       {this.getCourses()}
+
+                      </Card>
                     </Card>
 
 

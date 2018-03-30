@@ -10,23 +10,29 @@ export class ParamTags extends React.Component {
       inputVisible: false,
       inputValue: '',
     };
+
+    this.handleClose = this.handleClose.bind(this);
+    this.showInput = this.showInput.bind(this);
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleInputConfirm = this.handleInputConfirm.bind(this);
+
   }
 
-  handleClose = (removedTag) => {
+  handleClose(removedTag){
     const tags = this.state.tags.filter(tag => tag !== removedTag);
     this.setState({ tags });
     this.props.paramHandler(tags.slice(1))
   }
 
-  showInput = () => {
+  showInput(){
     this.setState({ inputVisible: true }, () => this.input.focus());
   }
 
-  handleInputChange = (e) => {
-    this.setState({ inputValue: e.target.value });
+  handleInputChange(event){
+    this.setState({ inputValue: event.target.value });
   }
 
-  handleInputConfirm = () => {
+  handleInputConfirm(){
     const state = this.state;
     const inputValue = state.inputValue;
     let tags = state.tags;
@@ -43,7 +49,6 @@ export class ParamTags extends React.Component {
   }
 
   saveInputRef = input => this.input = input
-
   render() {
     const { tags, inputVisible, inputValue } = this.state;
     return (
@@ -61,11 +66,10 @@ export class ParamTags extends React.Component {
           <Input
             ref={this.saveInputRef}
             type="text"
-            size="small"
+            size="medium"
             style={{ width: 78 }}
             value={inputValue}
             onChange={this.handleInputChange}
-            onBlur={this.handleInputConfirm}
             onPressEnter={this.handleInputConfirm}
           />
         )}

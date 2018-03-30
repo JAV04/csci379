@@ -45,6 +45,7 @@ export class InputForm extends Component {
   }
 
   yearChange(value){
+    this.props.yearHandler(value)
   }
 
   dateChange(value){
@@ -76,7 +77,7 @@ export class InputForm extends Component {
       <Row style={{marginTop: 20, marginBottom: 20}}>
         <Col span={8} offset={6}>
           <form className="">
-                <Select defaultValue="" style={{ width: 300, marginLeft: 20 }} onChange={this.deptChange}>
+                <Select defaultValue="" style={{ width: 300, marginLeft: 20, marginBottom:8 }} onChange={this.deptChange}>
                   <Option value="" selected>Any Department</Option>
                   <Option value="ACFM">ACFM (Acct &amp; Financial Management)</Option>
                   <Option value="OFFAF">OFFAF (Africa)</Option>
@@ -161,7 +162,7 @@ export class InputForm extends Component {
                 
 
               <Select defaultValue="" style={{ width: 300, marginLeft: 20 }} onChange={this.cccChange}>
-                <Option value="" selected> CCC Requirement (All)</Option>
+                <Option value="" selected> CCC Requirement </Option>
                 <Option value="ARHC">Arts and Humanities</Option>
                 <Option value="AHLG">Arts and Humanities Learning Goals</Option>
                 <Option value="CBL">Community Based Learning</Option>
@@ -197,8 +198,8 @@ export class InputForm extends Component {
             <RadioButton value="Spring">Spring</RadioButton>
           </RadioGroup>
 
-          <Select defaultValue={this.props.year} style={{ width: 140, marginLeft: 5,marginTop:10}} onChange={this.cccChange}>
-            <Option value="2018" selected> 2018 (All)</Option>
+          <Select defaultValue={this.props.year} style={{ width: 140, marginLeft: 5,marginTop:10}} onChange={this.yearChange}>
+            <Option value="2018"> 2018 </Option>
             <Option value="2019"> 2019 </Option>
             <Option value="2020"> 2020 </Option>
           </Select>

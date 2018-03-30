@@ -8,17 +8,20 @@ export class Course extends Component {
   }
 
   render() {
+    let t = this.props.course.Course + ":  " + this.props.course.Title ;
     return (
 
       <Card
+        hoverable
         type="inner"
-        title={this.props.course.Course}
-        extra={<a href="#">More Info</a>}
+        title={t}
         style={{marginBottom:20}}
       >
-        {this.props.course.Title} <br/>
         {this.props.course.Instructor} <br/>
         {this.props.course['Meeting Time']} <br/>
+        CRN: {this.props.course.CRN}<br/>
+        {"Seats Available: " + this.props.course.SeatsAvail}<br/>
+        {this.props.course.Room}
       </Card>
     );
   }
