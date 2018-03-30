@@ -20,5 +20,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage" : "https://jav04.github.io/csci379/project2/course-catalog/release/"
+  "homepage" : "./build/"
 }
