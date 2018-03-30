@@ -120,7 +120,7 @@ class App extends Component {
       passed = true
       for (j in letters){
         entry =  data[i]['Meeting Time']
-        if ( (entry === undefined) || entry.indexOf(letters[j]) > -1 || entry === 'TBA'){
+        if ( (entry === undefined) || entry.indexOf(letters[j]) > -1){
           passed = false;
           break
         }
